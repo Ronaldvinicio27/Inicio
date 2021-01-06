@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="restaurante" Class="DataLinqUserDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-0TDBOUO\SQLEXPRESS;Initial Catalog=restaurante;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="restauranteConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_usuarios" Member="tbl_usuarios">
+    <Type Name="tbl_usuarios">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_rol" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nombres" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="apellidos" Type="System.String" DbType="VarChar(59)" CanBeNull="true" />
+      <Column Name="usuario" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pass_plain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="activo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
